@@ -19,11 +19,16 @@ public class ComplimentGUI extends JFrame {
         
         getCompliment.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String compliment = ComplimentClient.getCompliment();
-                complimentText.setText(compliment);
+                complimentText.setText("Thinking of a compliment...");
+                ComplimentClient.getCompliment(ComplimentGUI.this);
             }
         });
     }
+    
+    public void complimentMessage(String compliment) {
+        complimentText.setText(compliment);
+    }
 }
+
 
 
