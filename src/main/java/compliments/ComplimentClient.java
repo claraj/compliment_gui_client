@@ -11,7 +11,7 @@ import org.json.JSONObject;
  */
 public class ComplimentClient {
     
-    private static final String SERVER_URL = "http://127.0.0.1:8080/";
+    private static final String SERVER_URL = "http://127.0.0.1:8080/";  // Replace with your URL
     private static final String TEXT = "text";  // key for reading JSON
     
     public static String getCompliment() {
